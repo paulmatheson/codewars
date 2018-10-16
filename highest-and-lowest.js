@@ -1,4 +1,6 @@
 /*
+Code Wars | Highest and Lowest
+
 In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
 
 All numbers are valid Int32, no need to validate them.
@@ -9,8 +11,5 @@ Output string must be two numbers separated by a single space, and highest numbe
 function highAndLow(n){
   n = n.split(" ").sort((a, b) => a - b);
   
-  let highest = n[n.length - 1], 
-    lowest = n[0];
-  
-  return highest + " " + lowest;
+  return n[n.length - 1] + " " + n[0];
 }
