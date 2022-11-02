@@ -9,20 +9,20 @@
 
 function towerBuilder(nFloors) {
   var tower = [];
-  
+
   for (var i = 1; i <= nFloors; i++) {
     tower.push("");
-    
+
     for (var k = 0; k < (nFloors - i); k++) {
-      tower[i-1] += " ";
+      tower[i - 1] += " ";
     }
-    
+
     for (var k = 0; k < ((i * 2) - 1); k++) {
-      tower[i-1] += "*";
+      tower[i - 1] += "*";
     }
-    
+
     for (var k = 0; k < (nFloors - i); k++) {
-      tower[i-1] += " ";
+      tower[i - 1] += " ";
     }
   }
   return tower;
